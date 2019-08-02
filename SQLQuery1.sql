@@ -24,7 +24,7 @@ CREATE TABLE Disciplinas
 
 --CRIAR TABELA DE ALUNOS
 CREATE TABLE Alunos
-(           mME
+(           
 	--tipo de dados, pk, fk
 	IdAluno	INT PRIMARY KEY IDENTITY
 	,Nome	VARCHAR(200)  NOT NULL UNIQUE

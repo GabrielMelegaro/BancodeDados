@@ -36,7 +36,14 @@ SELECT *
 
 SELECT IdEstilo
 	FROM Estilos;
-
+		
 DELETE FROM Artistas
 	WHERE IdArtista = 8;
 
+SELECT Artistas.*, Estilos.*
+	FROM Artistas
+	JOIN Estilos
+	ON Artistas.IdEstilo = Estilos.IdEstilo
+
+INSERT INTO Artistas VALUES ('AC/DC');
+LEFT JOIN Estilos
